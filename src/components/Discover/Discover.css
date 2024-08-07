@@ -1,0 +1,20 @@
+.discover {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 50px 0px;
+}
+
+.discover h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.discover p {
+    font-size: 21px;
+    color: #2b2a2a;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

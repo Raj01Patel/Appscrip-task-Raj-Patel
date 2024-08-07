@@ -1,0 +1,119 @@
+.sidebar {
+    width: 27%;
+    height: 100vh;
+    padding: 10px 30px;
+    transition: width 0.1s ease-in-out;
+    border-right: 1px solid #f3f2f2;
+}
+
+.sidebar.close {
+    width: 0%;
+    padding: 10px 0px;
+    overflow: hidden;
+    border-right: none;
+}
+
+.customizable-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.customizable-checkbox input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+.customizable-checkbox label {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sidebar-section {
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.section-content div {
+    padding: 10px 0px;
+}
+
+.section-content label {
+    margin-left: 10px;
+}
+
+.section-content.open {
+    max-height: 200px;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 10px 15px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .Menu-button {
+        position: absolute;
+        left: 0px;
+        top: -50px;
+    }
+
+    .sidebar.close {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .customizable-checkbox {
+        padding: 10px 0;
+    }
+
+    .sidebar-section {
+        padding: 20px 15px;
+    }
+
+    .section-content div {
+        padding: 8px 0;
+    }
+
+    .section-header {
+        font-size: 18px;
+    }
+
+    .customizable-checkbox label {
+        font-size: 18px;
+    }
+}

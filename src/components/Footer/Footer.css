@@ -1,0 +1,175 @@
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    padding: 70px 130px;
+}
+
+.first-container {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer-left {
+    width: 50%;
+    height: 100%;
+    align-content: center;
+}
+
+.footer-left p {
+    margin-bottom: 20px;
+}
+
+.be-the-first {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form input {
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-right {
+    width: 50%;
+    height: 100%;
+    font-size: 26px;
+    align-content: center;
+}
+
+.footer-right p {
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.contact-us {
+    font-weight: 600;
+}
+
+.second-container {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.metta-muse,
+.quick-links {
+    font-size: 30px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.follow-us {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.payment-icons {
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .first-container,
+    .second-container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-right p {
+        text-align: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .left-footer,.center-footer{
+        display: none;
+    }
+    .metta-muse,
+    .quick-links {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+
+    .follow-us {
+        font-size: 22px;
+    }
+
+    .social-icons a {
+        font-size: 26px;
+    }
+
+    .payment-icons img {
+        width: 50px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}
